@@ -37,13 +37,12 @@ public static class FctEntreesIP
     {
         return Read<char>(p_tr, char.TryParse);
     }
-    
+
     private static TypeDonnees Read<TypeDonnees>(TextReader p_tr, TryParseHandler<TypeDonnees> p_handler)
     {
         string str = Console.In.ReadLine();
-        TypeDonnees parsedValue = default(TypeDonnees);
 
-        if (!p_handler(str, out parsedValue))
+        if (!p_handler(str, out TypeDonnees parsedValue))
         {
             string methodName = (new StackTrace()).GetFrame(1).GetMethod().Name;
             Console.Error.WriteLine($"Impossible de lire le type demandé par la méthode {methodName} !");

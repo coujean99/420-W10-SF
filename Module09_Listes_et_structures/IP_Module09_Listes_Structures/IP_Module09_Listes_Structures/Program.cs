@@ -1,15 +1,12 @@
-﻿using System;
+﻿namespace IP_Module09_Listes_Structures;
 
-namespace IP_Module09_Listes_Structures
+class Program
 {
-    class Program
+
+    static void Main(string[] args)
     {
+        //Fonctions.DemoListes();
 
-        static void Main(string[] args)
-        {
-            //Fonctions.DemoListes();
-
-            Fonctions.DemoStructure();
-        }
+        Fonctions.DemoStructure();
     }
 }

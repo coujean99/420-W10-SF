@@ -1,32 +1,31 @@
 ﻿using System;
 
-namespace IPCours07_DemoFonctions
+namespace IPCours07_DemoFonctions;
+
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            //UnPremierTest();
+        //UnPremierTest();
 
-            UnDeuxiemeTest();
-        }
+        UnDeuxiemeTest();
+    }
 
-        public static void UnDeuxiemeTest()
-        {
-            int min = Fonctions.CalculerValeurMaximum(13, 42);
+    public static void UnDeuxiemeTest()
+    {
+        int min = Fonctions.CalculerValeurMaximum(13, 42);
 
-            Console.Out.WriteLine(min);
+        Console.Out.WriteLine(min);
 
-            Console.Out.WriteLine(Fonctions.CalculerValeurMaximum(23, 56));
-        }
+        Console.Out.WriteLine(Fonctions.CalculerValeurMaximum(23, 56));
+    }
 
-        public static void UnPremierTest()
-        {
-            Fonctions.AfficherLigneMotifs(6, '@');
-            Fonctions.AfficherLigneMotifs(12, '#');
-            Fonctions.AfficherLigneMotifs(1, '?');
+    public static void UnPremierTest()
+    {
+        Fonctions.AfficherLigneMotifs(6, '@');
+        Fonctions.AfficherLigneMotifs(12, '#');
+        Fonctions.AfficherLigneMotifs(1, '?');
 
 
-        }
     }
 }

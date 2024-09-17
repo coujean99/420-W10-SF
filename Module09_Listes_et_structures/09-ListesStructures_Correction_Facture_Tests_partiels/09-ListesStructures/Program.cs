@@ -1,13 +1,10 @@
-﻿using System;
+﻿namespace _09_ListesStructures;
 
-namespace _09_ListesStructures
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            //FonctionsListesEntiers.SaisirValeursEntieresEtAfficherStatistiques();
-            FonctionsFacture.ProgrammePrincipalFacture();
-        }
+        //FonctionsListesEntiers.SaisirValeursEntieresEtAfficherStatistiques();
+        FonctionsFacture.ProgrammePrincipalFacture();
     }
 }
