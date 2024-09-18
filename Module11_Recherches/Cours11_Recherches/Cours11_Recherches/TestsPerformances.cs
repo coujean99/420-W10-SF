@@ -11,9 +11,9 @@ public class TestsPerformances
     {
         int nbTests = 7;
 
-        using (System.IO.TextWriter csvtw = new System.IO.StreamWriter("temps.csv"))
+        using (System.IO.StreamWriter csvtw = new System.IO.StreamWriter("temps.csv"))
         {
-            using (System.IO.TextWriter tw = new System.IO.StreamWriter("temps.txt"))
+            using (System.IO.StreamWriter tw = new System.IO.StreamWriter("temps.txt"))
             {
                 csvtw.WriteLine($"nbDonnees,Recherche standard,Recherche dichotomique");
                 tw.WriteLine($"#nbDonnees\tRecherche standard\tRecherche dichotomique");
